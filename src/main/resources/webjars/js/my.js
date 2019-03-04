@@ -7,6 +7,7 @@ $(document).ready(function() {
             type: "GET",
             success: function(response) {
                 alert(response);
+                console.log(response);
             }
         };
         $.ajax(ajaxSetting);
@@ -19,6 +20,7 @@ $(document).ready(function() {
             type: "GET",
             success: function(response) {
                 alert(response);
+                console.log(response);
             }
         };
         $.ajax(ajaxSetting);
