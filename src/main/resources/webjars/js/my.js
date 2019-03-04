@@ -6,8 +6,8 @@ $(document).ready(function() {
             data: {},
             type: "GET",
             success: function(response) {
-                alert(response);
-                console.log(response);
+                alert("User List: " + response);
+                console.log("user List: " + response);
             }
         };
         $.ajax(ajaxSetting);
@@ -19,8 +19,8 @@ $(document).ready(function() {
             data: {},
             type: "GET",
             success: function(response) {
-                alert(response);
-                console.log(response);
+                alert("User ID: " + response);
+                console.log("User ID: " + response);
             }
         };
         $.ajax(ajaxSetting);
