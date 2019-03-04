@@ -15,7 +15,7 @@ $(document).ready(function() {
 
     $("#getUser").click(function() {
         var ajaxSetting = {
-            url: "http://localhost:8080/user/user10",
+            url: "http://localhost:8080/user/user8",
             data: {},
             type: "GET",
             success: function(response) {
