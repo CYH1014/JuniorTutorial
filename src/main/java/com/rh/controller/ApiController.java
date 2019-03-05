@@ -1,8 +1,10 @@
 package com.rh.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import com.rh.domain.PostJson;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,4 +36,15 @@ public class ApiController {
     public String listAllUser(@PathVariable String user) {
         return user;
     }
+
+
+    @RequestMapping(value = "/test", method = RequestMethod.POST)
+    @ResponseBody
+    public String JSON(@RequestBody PostJson postJson) {
+
+        return ("Parameter 1: " + postJson.getParam1() + "\n" + "Parameter 2: " + postJson.getParam2() + "\n" + "Parameter 3: " + postJson.getParam3());
+    }
+
+
+
 }
